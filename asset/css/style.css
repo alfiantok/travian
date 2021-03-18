@@ -14,3 +14,14 @@
 .main-header h1{
     font-size: 35pt;
 }
+.destination-box .swiper-slide:hover{
+    border:2px solid #000;
+    transition: border 1.5s;
+}
+.destination-box .swiper-slide{
+    transition: border 1.5s;
+}
+.rounded{
+    border-radius: 10px !important;
+}
+a,a:hover{text-decoration: none}
