@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="asset/css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.10.0/css/lightgallery.min.css">
 </head>
 <body>
     <div class="container-fluid bg-primary main-header pb-3">
@@ -299,17 +300,85 @@
             </div>
        </div>
 
-       <div class="row mt-5">
+       <div class="container row mt-5 pb-5">
             <div class="col-sm-12 mb-5">
                 <h2>Our Gallery</h2>
                 <p><small>Lorem ipsum dolor sit amet, consectetur</small></p>
             </div>
+            <ul id="lightgallery" class="list-unstyled row">
+                <li data-src="asset/img/img11.jpg" class="col-sm-4 p-2">
+                    <a href="asset/img/img11.jpg">
+                        <img class="img-responsive shadow rounded" src="asset/img/img11.jpg" alt="Thumb-1" style="width: 100%;object-fit: cover;">
+                    </a>
+                </li>
+                <li data-src="asset/img/img10.jpg" class="col-sm-4 p-2">
+                    <a href="asset/img/img10.jpg">
+                        <img class="img-responsive shadow rounded" src="asset/img/img10.jpg" alt="Thumb-2" style="width: 100%;object-fit: cover;">
+                    </a>
+                </li>
+                <li data-src="asset/img/img9.jpg" class="col-sm-4 p-2">
+                    <a href="asset/img/img9.jpg">
+                        <img class="img-responsive shadow rounded" src="asset/img/img9.jpg" alt="Thumb-3" style="width: 100%;object-fit: cover;">
+                    </a>
+                </li>
+                <li data-src="asset/img/img8.jpg" class="col-sm-4 p-2">
+                    <a href="asset/img/img8.jpg">
+                        <img class="img-responsive shadow rounded" src="asset/img/img8.jpg" alt="Thumb-4" style="width: 100%;object-fit: cover;">
+                    </a>
+                </li>
+                <li data-src="asset/img/img7.jpg" class="col-sm-4 p-2">
+                    <a href="asset/img/img7.jpg">
+                        <img class="img-responsive shadow rounded" src="asset/img/img7.jpg" alt="Thumb-4" style="width: 100%;object-fit: cover;">
+                    </a>
+                </li>
+                <li data-src="asset/img/img6.jpg" class="col-sm-4 p-2">
+                    <a href="asset/img/img6.jpg">
+                        <img class="img-responsive shadow rounded" src="asset/img/img6.jpg" alt="Thumb-4" style="width: 100%;object-fit: cover;">
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
+    <footer class="container-fluid pt-5 mt-5" style="background: #eee;">
+        <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h4 class="mb-4">TRAVIAN</h4>
+                    <img src="asset/img/wonderfulIndonesia.png" alt="pesonaindonesia" class="w-75">
+                </div>
+                <div class="col-sm-3">
+                    <h4 class="mb-4">Metode Pembayaran</h4>
+                    <img src="asset/img/mandiri.png" alt="Mandiri" width="80px" class="p-2 border mt-1">
+                    <img src="asset/img/bri.png" alt="Mandiri" width="80px" class="p-2 border mt-1">
+                    <img src="asset/img/bca.png" alt="Mandiri" width="80px" class="p-2 border mt-1">
+                    <img src="asset/img/bni.png" alt="Mandiri" width="80px" class="p-2 border mt-1">
+                    <img src="asset/img/visa.png" alt="Mandiri" width="80px" class="p-2 border mt-1">
+                    <img src="asset/img/mc.png" alt="Mandiri" width="80px" class="p-2 border mt-1">
+                </div>
+                <div class="col-sm-3">
+                    <h4 class="mb-4">Link</h4>
+                    <a href="#" class="d-block text-dark mt-2">Hotel</a>
+                    <a href="#" class="d-block text-dark mt-2">Destinasi</a>
+                    <a href="#" class="d-block text-dark mt-2">Blog</a>
+                    <a href="#" class="d-block text-dark mt-2">Support</a>
+                </div>
+                <div class="col-sm-3">
+                    <h4 class="mb-4">Kontak</h4>
+                    <div>0895 xxxxxx</div>
+                    <div>cs@travian.com</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 bg-dark text-light p-4 text-center">
+            &copy; Copyright 2020 - Travian
+        </div>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
+    <script src="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/js/lightgallery.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {
             slidesPerView: 5,
@@ -329,6 +398,8 @@
                 prevEl: '.swiper-button-prev',
             },
         });
+
+        lightGallery(document.getElementById('lightgallery')); 
     </script>
 </body>
 </html>
